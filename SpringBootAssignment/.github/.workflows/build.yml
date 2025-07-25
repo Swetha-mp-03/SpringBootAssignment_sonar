@@ -2,7 +2,7 @@ name: SonarQube
 on:
   push:
     branches:
-      - feature/employee-assignment
+      - feature/Spring-boot-assignment
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
