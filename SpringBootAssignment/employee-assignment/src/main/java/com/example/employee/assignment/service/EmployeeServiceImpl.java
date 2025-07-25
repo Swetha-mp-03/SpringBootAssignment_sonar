@@ -2,6 +2,7 @@ package com.example.employee.assignment.service;
 import com.example.employee.assignment.entity.Employee;
 import com.example.employee.assignment.dto.DepartmentDTO;
 import com.example.employee.assignment.dto.EmployeeResponseDTO;
+import com.example.employee.assignment.exception.EmployeeNotFoundException;
 import com.example.employee.assignment.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,7 +34,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public Employee getById(Long id) {
         return repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Employee with ID " + id + " is not found"));
+                .orElseThrow(() -> new EmployeeNotFoundException("Employee with ID " + id + " is not found"));
     }
 
     @Override
