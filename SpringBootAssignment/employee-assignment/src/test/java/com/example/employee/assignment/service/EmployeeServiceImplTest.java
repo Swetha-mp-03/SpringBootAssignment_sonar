@@ -3,7 +3,6 @@ package com.example.employee.assignment.service;
 import com.example.employee.assignment.dto.DepartmentDTO;
 import com.example.employee.assignment.dto.EmployeeResponseDTO;
 import com.example.employee.assignment.entity.Employee;
-import com.example.employee.assignment.exception.EmployeeNotFoundException;
 import com.example.employee.assignment.repository.EmployeeRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

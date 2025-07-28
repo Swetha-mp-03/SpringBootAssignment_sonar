@@ -3,7 +3,6 @@ package com.example.department.assignment.service;
 
 import com.example.department.assignment.entity.Department;
 import com.example.department.assignment.repository.DepartmentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
