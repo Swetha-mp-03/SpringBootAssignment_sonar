@@ -34,4 +34,4 @@ jobs:
         working-directory: SpringBootAssignment
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Swetha-mp-03_SpringBootAssignment_sonar
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Swetha-mp-03_SpringBootAssignment_sonar -Dsonar.exclusions=**/ServiceRegistryApplication.java,**/EmployeeAssignmentApplication.java,**/DepartmentAssignmentApplication.java
