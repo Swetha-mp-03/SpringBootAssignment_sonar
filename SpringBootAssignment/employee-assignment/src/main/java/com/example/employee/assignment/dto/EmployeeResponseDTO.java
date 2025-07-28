@@ -1,26 +1,4 @@
-//package com.example.employee.assignment.dto;
-//
-//
-//import lombok.*;
-//
-//@Data
-//@Getter
-//@Setter
-//@NoArgsConstructor
-//@AllArgsConstructor
-//public class EmployeeResponseDTO {
-//    private Long id;
-//    private String name;
-//    private String role;
-//    private String email;
-//    private Double salary;
-//    private DepartmentDTO department;
-//}
-
-
-
 package com.example.employee.assignment.dto;
-
 public class EmployeeResponseDTO {
 
     private Long id;
@@ -30,11 +8,11 @@ public class EmployeeResponseDTO {
     private Double salary;
     private DepartmentDTO department;
 
-    // ✅ No-arg constructor
+
     public EmployeeResponseDTO() {
     }
 
-    // ✅ All-args constructor
+
     public EmployeeResponseDTO(Long id, String name, String role, String email, Double salary, DepartmentDTO department) {
         this.id = id;
         this.name = name;
@@ -44,7 +22,6 @@ public class EmployeeResponseDTO {
         this.department = department;
     }
 
-    // ✅ Getters and Setters
     public Long getId() {
         return id;
     }
