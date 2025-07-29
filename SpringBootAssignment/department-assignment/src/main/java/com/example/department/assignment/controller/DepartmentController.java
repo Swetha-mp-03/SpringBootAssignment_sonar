@@ -3,7 +3,6 @@ package com.example.department.assignment.controller;
 
 import com.example.department.assignment.entity.Department;
 import com.example.department.assignment.service.DepartmentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

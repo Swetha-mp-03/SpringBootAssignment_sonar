@@ -4,11 +4,9 @@ import com.example.employee.assignment.dto.DepartmentDTO;
 import com.example.employee.assignment.dto.EmployeeResponseDTO;
 import com.example.employee.assignment.exception.EmployeeNotFoundException;
 import com.example.employee.assignment.repository.EmployeeRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import javax.naming.spi.ResolveResult;
 import java.util.List;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
