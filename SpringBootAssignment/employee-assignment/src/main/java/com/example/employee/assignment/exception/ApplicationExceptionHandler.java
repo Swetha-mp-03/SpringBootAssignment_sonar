@@ -24,7 +24,7 @@ public class ApplicationExceptionHandler {
             IllegalStateException.class
     })
     public ResponseEntity<ErrorResponse> handleCommonRuntimeExceptions(Exception ex) {
-        LOGGER.log(Level.SEVERE, "Unhandled exception: {0}", new Object[]{ex.getMessage(), ex});
+        LOGGER.log(Level.SEVERE, "Unhandled exception: " + ex.getMessage(), ex);
         return buildErrorResponse(ex, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
